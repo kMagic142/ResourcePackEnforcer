@@ -1,0 +1,43 @@
+countdown-timer:
+  timer: 5
+  time-before-timer: 4
+  repeating-message: true
+  titles:
+    enable: true
+    title: "&e&lACCEPT THE RP IN &6&l&n%time%s"
+    subtitle: "&f&oIf you deny it you will get &c&n&okicked&f&o!"
+effects:
+  enable-slowness: true
+  enable-blindness: true
+messages:
+  repeating-message:
+    - ""
+    - "&e&lACCEPT THE RP IN &6&l&n%time%s"
+    - "&f&oIf you don't accept it you will get &c&n&okicked&f&o!"
+    - ""
+  reload: "&aPlugin reloaded!"
+  invalid-target: "&cInvalid target!"
+  no-perm: "&cNo permission!"
+  send-texturepack: "&aSent resourcepack to player %player%!"
+  no-resourcepack-in-config: "&cNo resourcepack has been set in the config!"
+settings:
+  no-resourcepack-link-warning: true
+  bypass-permission: "resourcepack.bypass"
+  resourcepack: NO_LINK
+  status:
+    succesfull:
+      enable: false
+      commands:
+        - "bc &e&lPlayer %player% is using the resourcepack!"
+    declined:
+      enable: true
+      commands:
+        - "kick %player% &cYou need to accept the resourcepack! Go to server list > click on Edit >  set Server Resource Pack: Enabled > click on Done and try again!"
+    accepted:
+      enable: false
+      commands:
+        - "bc &e&lPlayer %player% is using the resourcepack!"
+    failed:
+      enable: false
+      commands:
+        - "kick %player% &cYou need to accept the resourcepack! Go to server list > click on Edit >  set Server Resource Pack: Enabled > click on Done and try again!"

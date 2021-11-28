@@ -1,0 +1,11 @@
+name: ResourcePackEnforcer
+version: '${project.version}'
+main: me.gushel.resourcepackenforcer.ResourcePackEnforcer
+api-version: 1.16
+authors: [ gush3l ]
+description: Enforce the usage of a ResourcePack
+depend: [ PlaceholderAPI ]
+commands:
+  resourcepackenforcer:
+    description: Plugin Main Command
+    aliases: [rpe]
